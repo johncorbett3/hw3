@@ -19,7 +19,6 @@ function pageLoad() {
   if  (ride.length > 1) {
     levelOfService = "Noober Pool"
     // show the second and third legs of the ride using passenger-2-x and passenger-3-x
-    
   } else if (ride.length == 1 && ride[0].purpleRequested == true) {
     levelOfService = "Noober Purple"
   } else if (ride[0].numberOfPassengers > 3) {
@@ -39,7 +38,6 @@ function pageLoad() {
   // console.log(passenger1Phone)
   // console.log(passenger1PickupAddressLine1)
   // console.log(passenger1PickupAddressLine2)
-
 
     passenger2Name = `${ride[1].passengerDetails.first} ${ride[1].passengerDetails.last}`, 
     passenger2Phone = ride[1].passengerDetails.phoneNumber, 
